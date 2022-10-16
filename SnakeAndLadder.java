@@ -2,7 +2,7 @@ package com.bridgelabz.snakeandladder;
 
 public class SnakeAndLadder {
 
-    static void getPosition() {
+    static void getWinner(){
         int diceRoll = 0;
         int snake[] = {30,37,57,78,99};
         int ladder[] = {3,11,35,58,74};
@@ -97,12 +97,17 @@ public class SnakeAndLadder {
                 System.out.println("Its a Ladder.");
                 System.out.println("you got a Ladder.");
                 System.out.println("You are at "+playerPosition+ " position.");
+            }else if (playerPosition > 100) {
+                playerPosition = playerPosition - diceRoll;
+
+                System.out.println("YOU CAN'T JUMP, YOU MUST LAND ON A 100.");
+                System.out.println("You are at same position till the Exact Number Not get.");
             }
         }
     }
 
     public static void main(String[] args) {
         SnakeAndLadder sc = new SnakeAndLadder();
-        sc.getPosition();
+        sc.getWinner();
     }
 }
