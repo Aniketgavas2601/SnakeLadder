@@ -17,11 +17,15 @@ public class SnakeAndLadder {
 
             System.out.println("Current Position of Player :"+playerPosition);
 
+            if (playerPosition == 100) {
+                System.out.println("CONGRATULATIONS!! YOU WON THE GAME.");
+            }
+
             if(diceRoll == 0){
 
                 playerPosition = playerPosition -diceRoll;
 
-                System.out.println("Please Roll a Die To Start The Game");
+                System.out.println("Please Roll a Die");
             }
 
             if(playerPosition == snake[0]){
@@ -29,73 +33,71 @@ public class SnakeAndLadder {
 
                 System.out.println("Its a Snake.");
                 System.out.println("you are Bitten By Snake.");
-                System.out.println("You are at "+playerPosition+ "position.");
+                System.out.println("You are at "+playerPosition+ " position.");
 
             }else if(playerPosition == snake[1]){
                 playerPosition = 16;
 
                 System.out.println("Its a Snake.");
                 System.out.println("you are Bitten By Snake.");
-                System.out.println("You are at "+playerPosition+ "position.");
+                System.out.println("You are at "+playerPosition+ " position.");
 
             }else if(playerPosition == snake[2]){
                 playerPosition = 32;
 
                 System.out.println("Its a Snake.");
                 System.out.println("you are Bitten By Snake.");
-                System.out.println("You are at "+playerPosition+ "position.");
+                System.out.println("You are at "+playerPosition+ " position.");
 
             }else if(playerPosition == snake[3]){
                 playerPosition = 38;
 
                 System.out.println("Its a Snake.");
                 System.out.println("you are Bitten By Snake.");
-                System.out.println("You are at "+playerPosition+ "position.");
+                System.out.println("You are at "+playerPosition+ " position.");
 
             }else if(playerPosition == snake[4]){
                 playerPosition = 12;
 
                 System.out.println("Its a Snake.");
                 System.out.println("you are Bitten By Snake.");
-                System.out.println("You are at "+playerPosition+ "position.");
+                System.out.println("You are at "+playerPosition+ " position.");
 
             }else if(playerPosition == ladder[0]){
                 playerPosition = 23;
 
                 System.out.println("Its a Ladder.");
                 System.out.println("you got a Ladder.");
-                System.out.println("You are at "+playerPosition+ "position.");
+                System.out.println("You are at "+playerPosition+ " position.");
 
             }else if(playerPosition == ladder[1]){
                 playerPosition = 45;
 
                 System.out.println("Its a Ladder.");
                 System.out.println("you got a Ladder.");
-                System.out.println("You are at "+playerPosition+ "position.");
+                System.out.println("You are at "+playerPosition+ " position.");
 
             }else if(playerPosition == ladder[2]){
                 playerPosition = 54;
 
                 System.out.println("Its a Ladder.");
                 System.out.println("you got a Ladder.");
-                System.out.println("You are at "+playerPosition+ "position.");
+                System.out.println("You are at "+playerPosition+ " position.");
 
             }else if(playerPosition == ladder[3]){
                 playerPosition =85;
 
                 System.out.println("Its a Ladder.");
                 System.out.println("you got a Ladder.");
-                System.out.println("You are at "+playerPosition+ "position.");
+                System.out.println("You are at "+playerPosition+ " position.");
 
             }else if(playerPosition == ladder[4]){
                 playerPosition = 96;
 
                 System.out.println("Its a Ladder.");
                 System.out.println("you got a Ladder.");
-                System.out.println("You are at "+playerPosition+ "position.");
+                System.out.println("You are at "+playerPosition+ " position.");
             }
-
-
         }
     }
 
